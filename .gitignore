@@ -1,0 +1,118 @@
+# Visual Studio specific files
+.vs/
+*.VC.db
+*.suo
+*.user
+*.vcxproj.user
+*.sln.docstates
+
+# MSBuild output (if not using CMake exclusively with VS)
+*.tlog
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.manifest
+*.res
+*.pch
+*.sdf
+ipch/
+x64/
+Win32/
+Release/
+Debug/
+# If your VS output folders are named differently, add them, e.g., ARM64/
+
+# CMake generated files and directories
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CMakeLists.txt.user
+compile_commands.json
+CTestTestfile.cmake
+
+# Common build output directories (adjust if yours are different)
+build/
+out/
+bin/ # If you output executables directly to a 'bin' at the root
+lib/ # If you output libraries directly to a 'lib' at the root
+
+# Compiled Object files (already covered by MSBuild section but good for general C++)
+*.o
+*.obj
+
+# Precompiled Headers (already covered by MSBuild section)
+*.gch
+*.pch
+
+# Compiled Dynamic libraries / DLLs (executables themselves are often not ignored)
+# *.dll # Usually you WANT to track your OWN .dlls if they are part of the project's distributable output
+# *.so
+# *.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib # Again, be careful if you are producing .lib files you intend to distribute/commit
+
+# Executables (generally, you might want to commit final release executables for tags/releases,
+# but ignore them during development from build folders)
+# *.exe # Covered by build/ out/ etc.
+# *.out
+# *.app
+
+# OS generated files
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Icon? # macOS Icon placeholder
+
+# Linux
+*~
+# KDE directory preferences
+.directory
+# Linux trash folder which might appear on external disk
+.Trash-*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Rider specific
+.idea/
+*.iml
+
+# VS Code specific
+.vscode/
+# But sometimes .vscode/launch.json or .vscode/tasks.json are shared with the team
+
+# If using specific package managers or dependency tools
+# For example, vcpkg:
+# vcpkg_installed/
+# vcpkg/
+
+# Doxygen documentation output
+# html/
+# latex/
+
+# Add any other project-specific generated files or folders
+# e.g. test_coverage/
